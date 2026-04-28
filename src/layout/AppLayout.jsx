@@ -1,9 +1,10 @@
 import { Outlet, NavLink } from "react-router-dom";
+import "../styles/main.css";
 
 export default function AppLayout() {
   return (
     <div className="app-shell">
-      <header className="header">Chilton Bowls</header>
+      <header className="header">Chilton Bowls Club</header>
 
       <main className="main">
         <Outlet />
@@ -18,3 +19,4 @@ export default function AppLayout() {
     </div>
   );
 }
+
