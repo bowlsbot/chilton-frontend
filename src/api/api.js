@@ -6,7 +6,7 @@ function token() {
 
 export async function apiGet(path) {
   const res = await fetch(`${API_URL}${path}`, {
-    headers: { "x-player-token": token() },
+    headers: { "x-player-token": token() }
   });
   return res.json();
 }
@@ -16,10 +16,11 @@ export async function apiPost(path, body) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-player-token": token(),
+      "x-player-token": token()
     },
-    body: JSON.stringify(body),
+    body: JSON.stringify(body)
   });
   return res.json();
 }
+
 
